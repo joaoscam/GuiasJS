@@ -72,6 +72,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  transition: background var(--transition), color var(--transition);
 }
 ul {
   list-style-type: none;
@@ -256,4 +257,64 @@ About
 }
 .content.active {
   display: block;
+}
+.about-img img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/*
+=============== 
+Temas por time (paletas)
+===============
+*/
+
+[data-theme="corinthians"] {
+  --clr-grey-10: #4f4343;
+  --clr-grey-1: #000000;
+  --clr-grey-9: #701f1f;
+  --clr-primary-5: #FFFFFF;
+  --clr-grey-5: #000000;
+}
+
+[data-theme="palmeiras"] {
+  --clr-grey-10: #004d1a;
+  --clr-grey-1: #000000;
+  --clr-grey-9: #007A33;
+  --clr-primary-5: #00C853;
+  --clr-grey-5: #000000;
+}
+
+[data-theme="santos"] {
+  --clr-grey-10: #b9b9b9;
+  --clr-grey-1: #000000;
+  --clr-grey-9: #444444;
+  --clr-primary-5: #000000;
+  --clr-grey-5: #000000;
+}
+
+[data-theme="sao-paulo"] {
+  --clr-grey-10: #b23232;
+  --clr-grey-1: #000000;
+  --clr-grey-9: #584848;
+  --clr-primary-5: #FF0000;
+  --clr-grey-5: #000000;
+}
+
+[data-theme="flamengo"] {
+  --clr-grey-10: #761414;
+  --clr-grey-1: #000000;
+  --clr-grey-9: #4e4d4d;
+  --clr-primary-5: #FF0000;
+  --clr-grey-5: #000000;
+}
+
+[data-theme="vasco"] {
+  --clr-grey-10: #5d5d5d;
+  --clr-grey-1: #000000;
+  --clr-grey-9: #7d7676;
+  --clr-primary-5: #FFFFFF;
+  --clr-grey-5: #000000;
 }

@@ -1,6 +1,8 @@
 const btns = document.querySelectorAll('.tab-btn');
 const about = document.querySelector('.about');
 const articles = document.querySelectorAll('.content');
+const body = document.body;
+const teamLogo = document.getElementById('team-logo'); // adiciona referência à imagem
 
 //  esse js controla a palavra "active" elementos, por exemplo, se vc clica em corinthians, 
 //  ele adiciona a palavra active e essa será a única descrição mostrada, 
@@ -20,5 +22,13 @@ about.addEventListener('click', function(e) {
 
     const element = document.getElementById(id);
     element.classList.add('active');
+
+    body.setAttribute('data-theme', id);
+
+    // troca a imagem de acordo com o botão clicado
+    const img = e.target.dataset.img;
+    if (img) {
+      teamLogo.src = img;
+    }
   }
 });
